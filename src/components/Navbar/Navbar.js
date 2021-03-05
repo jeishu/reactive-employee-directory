@@ -9,7 +9,7 @@ const Navbar = () => {
                 <div className="searchBar">
                     <form>
                         <input type="text" name="name" placeholder="" />
-                        <input type="submit" value="Submit" />
+                        <input className="button" type="submit" value="Submit" />
                     </form>
                 </div>
             </div>
