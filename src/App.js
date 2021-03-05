@@ -1,12 +1,12 @@
 import './scss/App.scss';
 import Navbar from "./components/Navbar/Navbar.js";
-import Jumbotron from "./components/Jumbotron/Jumbotron.js"
+import Main from "./components/Main/Main.js"
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Jumbotron />
+      <Main />
     </div>
   );
 }
