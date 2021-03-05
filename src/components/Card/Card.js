@@ -1,19 +1,28 @@
 import React from 'react'
 import "../Card/Card.scss";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="Card">
-            <figure>
-                <img src="./img/demopic.jpg" alt="" />
+            <figure className="img-container">
+                <img alt={props.name} src={props.image} />
             </figure>
-            
-            <div className="info">
-                <p>Name: Jeremy </p>
-                <p>Phone: 333-333-3333 </p>
-                <p>Email: jz@jz.com </p>
-                <p>DOB: 11/11/1111 </p>
+            <div className="content">
+                <ul>
+                    <li>
+                        <strong>Name:</strong> {props.name}
+                    </li>
+                    <li>
+                        <strong>Occupation:</strong> {props.occupation}
+                    </li>
+                    <li>
+                        <strong>Location:</strong> {props.location}
+                    </li>
+                </ul>
             </div>
+            <span onClick={() => props.removeFriend(props.id)} className="remove">
+                𝘅
+            </span>
         </div>
     )
 }

@@ -1,14 +1,51 @@
+import React, { Component } from "react";
 import './scss/App.scss';
 import Navbar from "./components/Navbar/Navbar.js";
-import Main from "./components/Main/Main.js"
+import Main from "./components/Main/Main.js";
+import Card from "./components/Card/Card.js";
+import friends from "./friends.json";
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  // Setting this.state.friends to the friends json array
+  state = {
+    friends
+  };
+
+  removeFriend = id => {
+    // Filter this.state.friends for friends with an id not equal to the id being removed
+    const friends = this.state.friends.filter(friend => friend.id !== id);
+    // Set this.state.friends equal to the new friends array
+    this.setState({ friends });
+  };
+
+  // Map over this.state.friends and render a FriendCard component for each friend object
+  render() {
+    return ( <>
       <Navbar />
-      <Main />
-    </div>
-  );
+      <Main>
+        {this.state.friends.map(friend => (
+          <Card
+            removeFriend={this.removeFriend}
+            id={friend.id}
+            key={friend.id}
+            name={friend.name}
+            image={friend.image}
+            occupation={friend.occupation}
+            location={friend.location}
+          />
+        ))}
+      </Main>
+    </>);
+  }
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Navbar />
+//       <Main />
+//     </div>
+//   );
+// }
 
 export default App;
