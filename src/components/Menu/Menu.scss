@@ -1,0 +1,60 @@
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuContainer {
+    @include flexRow;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    .border {
+        height: 30px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.398);
+    }
+
+    .menuBox {
+        position: relative;
+        .box {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+
+            background: rgba( 255, 255, 255, 0.10 );
+            backdrop-filter: blur( 30px );
+            -webkit-backdrop-filter: blur( 30px );
+            border-radius: 25%;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            z-index: 1;
+            transition: .2s ease-in-out;
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            opacity: 80%;
+            transition: .2s ease-in-out;
+        }
+        &:active img, &:focus img {
+            transform:translate(10px, -10px);
+            transition: .2s ease-in-out;
+        }
+        &:active .box, &:focus .box {
+            transform:translate(-10px, 10px);
+            transition: .2s ease-in-out;
+            opacity: 0;
+        }
+    }
+    
+}

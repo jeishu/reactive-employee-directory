@@ -26,22 +26,6 @@ const EmployeeData = () => {
                 phone={phone}
                 email={email}
                 />
-            {/* <figure className="img-container">
-                <img alt={image} src={image} />
-            </figure>
-            <div className="content">
-                <ul>
-                    <li>
-                        <strong>Name:</strong> {name}
-                    </li>
-                    <li>
-                        <strong>Phone:</strong> {phone}
-                    </li>
-                    <li>
-                        <strong>Email:</strong> {email}
-                    </li>
-                </ul>
-            </div> */}
         </div>
     )
 }
