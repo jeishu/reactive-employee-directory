@@ -7,7 +7,6 @@
     flex-direction: row;
 }
 
-
 .navBar {
     @include flexColumn;
     justify-content: flex-start;
@@ -28,8 +27,5 @@
 
     h1 {
         font-size: 1em;
-    }
-    form {
-        margin: 1em 0;
     }
 }
