@@ -6,7 +6,6 @@ import PhoneImage from "./img/phone.svg";
 import EmailImage from "./img/email.svg";
 
 const Menu = () => {
-
     return (
         <div className="menuContainer">
             <div className="menuBox">
