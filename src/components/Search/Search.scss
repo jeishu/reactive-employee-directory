@@ -21,19 +21,19 @@
         width: 100%;
 
         button {
-                border: none;
-                outline: none;
-                padding: .2em .3em;
-                border-bottom-left-radius: 5px;
-                border-top-left-radius: 5px;
-                background-color: transparent;
+            border: none;
+            outline: none;
+            padding: .2em .3em;
+            background-color: transparent;
+            cursor: pointer;
         }
+        
         input {
             border: 1px solid rgba( 255, 255, 255, 0.18);
             outline: none;
             padding: .2em;
-            border-bottom-right-radius: 5px;
-            border-top-right-radius: 5px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
             background-color: transparent;
             &::placeholder {
                 color: rgba(255, 255, 255, 0.4);

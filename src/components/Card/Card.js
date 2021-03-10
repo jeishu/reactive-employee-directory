@@ -5,26 +5,23 @@ const Card = (props) => {
     return (
         <div className="Card">
             <figure className="img-container">
-                <img alt={props.name} src={props.image} />
+                <img alt={props.image} src={props.image} />
             </figure>
-            <div className="content">
+            <div className="info">
                 <ul>
                     <li>
                         <strong>Name:</strong> {props.name}
                     </li>
                     <li>
-                        <strong>Occupation:</strong> {props.occupation}
+                        <strong>Phone:</strong> {props.phone}
                     </li>
                     <li>
-                        <strong>Location:</strong> {props.location}
+                        <strong>Email:</strong> {props.email}
                     </li>
                 </ul>
             </div>
-            <span onClick={() => props.removeFriend(props.id)} className="remove">
-                𝘅
-            </span>
         </div>
     )
-}
+};
 
-export default Card
+export default Card;
