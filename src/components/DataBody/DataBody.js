@@ -8,9 +8,12 @@ const DataBody = () => {
     return (
         <tbody>
            {data.filterList[0] !== undefined && data.filterList[0].name !==undefined ? (
-               data.filterList.map(({picture, name, phone, email}) => {
+               data.filterList.map(({login,picture, name, phone, email}) => {
                    return (
-                       <tr className="cardInfo">
+                       <tr 
+                        className="cardInfo"
+                        key={login.username}
+                        >
                            <td data-th="Image">
                                <img
                                     className="profileImage"
