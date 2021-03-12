@@ -20,7 +20,6 @@ const EmployeeData = () => {
             {label: "Email"}
         ]
     })
-    
 
     // Render 25 People
     useEffect(() => {
@@ -37,12 +36,19 @@ const EmployeeData = () => {
         })
     }, []);
 
-    const handleFilter = () => {
+    const handleSearch = (event) => {
+        const filter = event.target.value;
 
+        setEmployeeState({
+            ...employeeState,
+            filterList: employeeState.list.filter(users => {
+            let input = users.name.first.toLowerCase();
+            return input.indexOf(filter.toLowerCase()) !== -1;})
+        })
     }
 
     return (
-        <EmployeeContext.Provider value={employeeState}>
+        <EmployeeContext.Provider value={{employeeState, handleSearch}}>
             <div>
                 <Navbar>
                     <Search/>

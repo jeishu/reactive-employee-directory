@@ -7,8 +7,8 @@ const DataBody = () => {
 
     return (
         <tbody>
-           {data.filterList[0] !== undefined && data.filterList[0].name !==undefined ? (
-               data.filterList.map(({login,picture, name, phone, email}) => {
+           {data.employeeState.filterList[0] !== undefined && data.employeeState.filterList[0].name !==undefined ? (
+               data.employeeState.filterList.map(({login,picture, name, phone, email}) => {
                    return (
                        <tr 
                         className="cardInfo"

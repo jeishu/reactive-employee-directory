@@ -12,7 +12,7 @@ const DataTable = () => {
             <table>
                 <thead className="theadInfo">
                     <tr className="labelInfo">
-                        {data.profile.map(({label}) => {
+                        {data.employeeState.profile.map(({label}) => {
                             return (
                                 <th className="label">
                                     {label}
