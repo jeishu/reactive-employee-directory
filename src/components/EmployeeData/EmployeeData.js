@@ -36,14 +36,13 @@ const EmployeeData = () => {
         })
     }, []);
 
-    const handleSearch = (event) => {
-        const filter = event.target.value;
-
+    const handleSearch = (event) => { 
         setEmployeeState({
             ...employeeState,
             filterList: employeeState.list.filter(users => {
-            let input = users.name.first.toLowerCase();
-            return input.indexOf(filter.toLowerCase()) !== -1;})
+                let input = users.name.first.toLowerCase();
+                return input.indexOf(event.target.value.toLowerCase()) !== -1;
+            })
         })
     }
 
