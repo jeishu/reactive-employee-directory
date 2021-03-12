@@ -24,9 +24,6 @@ const EmployeeData = () => {
     // Render 25 People
     useEffect(() => {
         API.getEmployee().then(res => {
-            // Storing an array of 100 people
-            // setResults(res.data.results);
-            // console.log(results);
 
             setEmployeeState({
                 ...employeeState,
