@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Reactive Employee Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+An application made to record user's finances for online and offline uses.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Features](#Features)
+* [Links](#Links)
+* [Demo](#Demo)
+* [Technology](#Technology)
+* [Reference](#Reference)
+* [Contributors](#Contributors)
+* [Questions](#Questions)
+* [License](#License)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+Main Features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Able to view an entire employee directory at once so that the user can have quick access to the information.
 
-### `npm run build`
+    Able to filter by searching for the an user by using the search bar and automatically filter through existing list of users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In production:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Menu button that allows the directory to be sorted into different category: Name, Phone, and Email.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Links
 
-### `npm run eject`
+* Project Repo: [Repository](https://github.com/jeishu/reactive-employee-directory)
+* Deployed Application: [Reactive Employee Directory](https://reactive-employee-directory.herokuapp.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Demo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Picture](./public/img/iphone6.png)
+![Picture](./public/img/ipad.png)
+![Picture](./public/img/desktop.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technology
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Langauges:
 
-## Learn More
+    HTML, CSS, Javascript
+Framework:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    REACT (JSX), SASS(.scss)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Technologies:
 
-### Code Splitting
+    Axios, Npm Sass-Loader, Npm Sass
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deployment:
 
-### Analyzing the Bundle Size
+    Heroku, Mars
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Reference
 
-### Making a Progressive Web App
+Menu Icons are found at Flaticon, the arist is [bqlan](https://www.flaticon.com/authors/bqlqn).
+    
+Importing [Images in React](https://daveceddia.com/react-image-tag/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributors
 
-### Advanced Configuration
+Using React as a base for coding. Sass was used in placed of CSS for styling, but essentially gives the same result, just personal preference. Deployment was done using Heroku and Mars.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Questions
+If you have any question about the application, don't hesitate to contact me: visit my [portfolio](https://github.com/jeishu).
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT © 2021 Jeremy Zhu
