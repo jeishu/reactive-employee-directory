@@ -8,7 +8,7 @@ const Search = () => {
                 <button type="submit"><i className="fas fa-search"></i></button>
                 <input 
                 type="search"
-                placeholder="SEARCH >>"/>
+                placeholder="Search >>"/>
             </form>
         </div>
     );
