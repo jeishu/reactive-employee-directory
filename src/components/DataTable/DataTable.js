@@ -8,13 +8,13 @@ const DataTable = () => {
     console.log(data.profile);
 
     return (
-        <div>
+        <div className="tableContainer">
             <table>
-                <thead>
-                    <tr>
+                <thead className="theadInfo">
+                    <tr className="labelInfo">
                         {data.profile.map(({label}) => {
                             return (
-                                <th>
+                                <th className="label">
                                     {label}
                                 </th>
                             )

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import EmployeeContext from "../../utils/EmployeeContext.js";
+import "../DataBody/DataBody.scss";
 
 const DataBody = () => {
     const data = useContext(EmployeeContext);
@@ -9,9 +10,10 @@ const DataBody = () => {
            {data.filterList[0] !== undefined && data.filterList[0].name !==undefined ? (
                data.filterList.map(({picture, name, phone, email}) => {
                    return (
-                       <tr>
+                       <tr className="cardInfo">
                            <td data-th="Image">
                                <img
+                                    className="profileImage"
                                     src={picture.large}
                                     alt={`image for ${name.first} ${name.last}`}
                                 />

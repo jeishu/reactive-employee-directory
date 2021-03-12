@@ -50,7 +50,6 @@ const EmployeeData = () => {
                 </Navbar>
                 <div>
                     {employeeState.filterList.length > 0 ? <DataTable /> : <div></div>}
-                    {/* <DataTable/> */}
                 </div>
 
                 {/* {results.map ( employee => {
