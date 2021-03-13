@@ -4,7 +4,7 @@
 
 ## Description
 
-An application made to record user's finances for online and offline uses.
+An application made to help organize user directory into name, email, and phone.
 
 ## Table of Contents
 
