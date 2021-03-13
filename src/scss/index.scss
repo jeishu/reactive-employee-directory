@@ -29,3 +29,56 @@ body {
               linear-gradient(360deg, rgba(150, 230, 255, 0.8), rgba(0,0,255,0) 70.71%);
   
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Main {
+    width: 550px;
+    margin: 0 auto;
+    transition: .4s ease-in-out all;
+
+    .navBar {
+      width: auto;
+      margin: 1em auto;
+    }
+    .tableContainer {
+      width: auto;
+      
+      thead > tr {
+        font-size: 1.4em;
+      }
+      tbody > tr {
+        font-size: .8em;
+        td > img {
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Main {
+    width: 800px;
+
+    .navBar > h1{
+      font-size: 2.5em;
+      font-weight: normal;
+    }
+    .tableContainer {
+      thead > tr {
+        font-size: 2em;
+      }
+      tbody > tr {
+        font-size: 1em;
+        td > img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}

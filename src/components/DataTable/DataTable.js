@@ -12,28 +12,28 @@ const DataTable = () => {
 
     return (
         <>
-        <Menu/>
-        <div className="tableContainer">
-            <table>
-                <thead>
-                    <tr>
-                        <th className="label">
-                            Image
-                        </th>
-                        <th className="label">
-                            Name
-                        </th >
-                        <th className="label">
-                            Phone
-                        </th>
-                        <th className="label">
-                            Email
-                        </th>
-                    </tr>
-                </thead>
-                <DataBody/>
-            </table>
-        </div>
+            <Menu/>
+            <div className="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th className="label">
+                                Image
+                            </th>
+                            <th className="label">
+                                Name
+                            </th >
+                            <th className="label">
+                                Phone
+                            </th>
+                            <th className="label">
+                                Email
+                            </th>
+                        </tr>
+                    </thead>
+                    <DataBody/>
+                </table>
+            </div>
         </>
     )
 }

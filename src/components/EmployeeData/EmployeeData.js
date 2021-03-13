@@ -82,15 +82,14 @@ const EmployeeData = () => {
 
     return (
         <EmployeeContext.Provider value={{employeeState, handleSearch, handleSortName, handleSortEmail}}>
-            <div>
+            <>
                 <Navbar>
                     <Search/>
-                    {/* <Menu/> */}
                 </Navbar>
-                <div>
+                <>
                     {employeeState.filterList.length > 0 ? <DataTable /> : <div></div>}
-                </div>
-            </div>
+                </>
+            </>
         </EmployeeContext.Provider>
     );
 };

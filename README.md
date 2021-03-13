@@ -38,9 +38,8 @@ In production:
 
 ## Demo
 
-![Picture](./public/img/iphone6.png)
-![Picture](./public/img/ipad.png)
-![Picture](./public/img/desktop.png)
+![Picture](./public/demo.png)
+![Picture](./public/demo-phone.png)
 
 ## Technology
 
