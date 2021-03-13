@@ -38,8 +38,11 @@ In production:
 
 ## Demo
 
-![Picture](./public/demo.png)
-![Picture](./public/demo-phone.png)
+<img src="./public/img/demogif.gif">
+
+<img src="./public/img/demo.png" width="640" height="312">
+
+<img src="./public/img/demo-phone.png" height="312">
 
 ## Technology
 
