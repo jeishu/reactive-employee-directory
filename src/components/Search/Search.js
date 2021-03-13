@@ -8,7 +8,7 @@ const Search = () => {
     return (
         <div className="searchContainer">
             <form>
-                <button type="submit"><i className="fas fa-search"></i></button>
+                <button type="submit" onClick={event => event.preventDefault()}><i className="fas fa-search"></i></button>
                 <input 
                 type="search"
                 placeholder="Search >>"

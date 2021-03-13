@@ -80,42 +80,16 @@ const EmployeeData = () => {
         console.log("Click Email");
     }
 
-    // Sorting Phone
-    const handleSortPhone = (event) => {
-        const sortingPhone = employeeState.filterList.sort((a,b) => {
-            if (!employeeState.phoneSort === "ascending"){
-                return a.phone - b.phone; 
-            } else {
-                return b.phone - a.phone; 
-            } 
-        })
-        setEmployeeState({
-            ...employeeState,
-            filterList: sortingPhone,
-            phoneSort: "descending"
-        })
-        console.log(sortingPhone);
-    }
-
     return (
-        <EmployeeContext.Provider value={{employeeState, handleSearch, handleSortName, handleSortEmail, handleSortPhone}}>
+        <EmployeeContext.Provider value={{employeeState, handleSearch, handleSortName, handleSortEmail}}>
             <div>
                 <Navbar>
                     <Search/>
-                    <Menu/>
+                    {/* <Menu/> */}
                 </Navbar>
                 <div>
                     {employeeState.filterList.length > 0 ? <DataTable /> : <div></div>}
                 </div>
-
-                {/* {results.map ( employee => {
-                    return (<Card
-                    image={employee.picture.large}
-                    name={`${employee.name.first} ${employee.name.last}`}
-                    phone={employee.phone}
-                    email={employee.email}
-                    />)
-                })}     */}
             </div>
         </EmployeeContext.Provider>
     );

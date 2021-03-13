@@ -25,9 +25,11 @@ Main Features:
 
     Searching for the an user by using the search bar will automatically filter through existing list of users.
 
+    Menu button that allows the directory to be sorted A to Z or Z to A by Name or Email.
+
 In production:
 
-    Menu button that allows the directory to be sorted into different category: Name, Phone, and Email.
+    Menu button that allows the directory to be sorted numerically by Phone number.
 
 ## Links
 
@@ -71,7 +73,7 @@ Importing [Images in React](https://daveceddia.com/react-image-tag/).
 
 ## Contributors
 
-Using React as a base for coding. Sass was used in placed of CSS for styling, but essentially gives the same result, just personal preference. Deployment was done using Heroku and Mars.
+Using React as a base for coding. Sass was used in placed of CSS for styling, but essentially gives the same result, just personal preference. Deployment was done using Heroku and Mars. Big thanks to my TA, Sean for helping me figuring out how to sort my data by name.
 
 ## Questions
 If you have any question about the application, don't hesitate to contact me: visit my [portfolio](https://github.com/jeishu).

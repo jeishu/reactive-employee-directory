@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import EmployeeContext from "../../utils/EmployeeContext.js";
 import DataBody from "../DataBody/DataBody.js";
 import "../DataTable/DataTable.scss";
+import Menu from "../Menu/Menu";
 
 const DataTable = () => {
     const data = useContext(EmployeeContext);
@@ -10,6 +11,8 @@ const DataTable = () => {
     // console.log(data.employeeState.list);
 
     return (
+        <>
+        <Menu/>
         <div className="tableContainer">
             <table>
                 <thead>
@@ -17,25 +20,13 @@ const DataTable = () => {
                         <th className="label">
                             Image
                         </th>
-                        <th 
-                            className="label"
-                            style= {{cursor:'pointer'}}
-                            onClick={data.handleSortName}
-                        >
+                        <th className="label">
                             Name
                         </th >
-                        <th 
-                            className="label"
-                            style= {{cursor:'pointer'}}
-                            onClick={data.handleSortPhone}
-                        >
+                        <th className="label">
                             Phone
                         </th>
-                        <th 
-                            className="label"
-                            style= {{cursor:'pointer'}}
-                            onClick={data.handleSortEmail}    
-                        >
+                        <th className="label">
                             Email
                         </th>
                     </tr>
@@ -43,6 +34,7 @@ const DataTable = () => {
                 <DataBody/>
             </table>
         </div>
+        </>
     )
 }
 

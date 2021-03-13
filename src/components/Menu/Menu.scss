@@ -31,13 +31,14 @@
             backdrop-filter: blur( 30px );
             -webkit-backdrop-filter: blur( 30px );
             border-radius: 25%;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+            // border: 1px solid rgba( 255, 255, 255, 0.18 );
+            
             position: absolute;
             top: -2px;
             left: -2px;
-            z-index: 1;
-            transition: .4s ease-in-out;
+            // z-index: 1;
+            opacity: 50%;
+            transition: .4s all ease-in-out;
         }
 
         img{
@@ -51,11 +52,11 @@
             transition: .5s ease-in-out;
         }
         &:active img, &:focus img {
-            transform:translate(7px, -7px);
+            transform:translate(10px);
             transition: .2s ease-in-out;
         }
         &:active .box, &:focus .box {
-            transform:translate(-7px, 7px);
+            transform:translate(-2px, 2px);
             transition: .2s ease-in-out;
             opacity: 0;
         }
