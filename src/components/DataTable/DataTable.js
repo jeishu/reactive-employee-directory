@@ -24,7 +24,11 @@ const DataTable = () => {
                         >
                             Name
                         </th >
-                        <th className="label">
+                        <th 
+                            className="label"
+                            style= {{cursor:'pointer'}}
+                            onClick={data.handleSortPhone}
+                        >
                             Phone
                         </th>
                         <th 

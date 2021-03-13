@@ -13,6 +13,7 @@ const EmployeeData = () => {
         filterList: [],
         nameSort: false,
         emailSort: false,
+        phoneSort: "ascending",
         profile: [
             {label: "Image"},
             {label: "Name"},
@@ -79,8 +80,25 @@ const EmployeeData = () => {
         console.log("Click Email");
     }
 
+    // Sorting Phone
+    const handleSortPhone = (event) => {
+        const sortingPhone = employeeState.filterList.sort((a,b) => {
+            if (!employeeState.phoneSort === "ascending"){
+                return a.phone - b.phone; 
+            } else {
+                return b.phone - a.phone; 
+            } 
+        })
+        setEmployeeState({
+            ...employeeState,
+            filterList: sortingPhone,
+            phoneSort: "descending"
+        })
+        console.log(sortingPhone);
+    }
+
     return (
-        <EmployeeContext.Provider value={{employeeState, handleSearch, handleSortName, handleSortEmail}}>
+        <EmployeeContext.Provider value={{employeeState, handleSearch, handleSortName, handleSortEmail, handleSortPhone}}>
             <div>
                 <Navbar>
                     <Search/>
