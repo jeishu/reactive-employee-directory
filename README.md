@@ -21,9 +21,9 @@ An application made to record user's finances for online and offline uses.
 
 Main Features:
 
-    Able to view an entire employee directory at once so that the user can have quick access to the information.
+    View an entire employee directory at once.
 
-    Able to filter by searching for the an user by using the search bar and automatically filter through existing list of users.
+    Searching for the an user by using the search bar will automatically filter through existing list of users.
 
 In production:
 
@@ -51,7 +51,7 @@ Framework:
 
 Technologies:
 
-    Axios, Npm Sass-Loader, Npm Sass
+    Axios, Npm Sass-Loader, Npm Sass, RandomUser API
 
 Deployment:
 
@@ -59,9 +59,15 @@ Deployment:
 
 ## Reference
 
+[Sorting Tables with React](https://www.smashingmagazine.com/2020/03/sortable-tables-react/) with the help of [localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#browser_compatibility).
+
+[Search Bar with React](https://dev.to/asimdahall/simple-search-form-in-react-using-hooks-42pg) with the help of [Filters from Hacking with React](http://www.hackingwithreact.com/read/1/13/rendering-an-array-of-data-with-map-and-jsx).
+
 Menu Icons are found at Flaticon, the arist is [bqlan](https://www.flaticon.com/authors/bqlqn).
     
 Importing [Images in React](https://daveceddia.com/react-image-tag/).
+
+[Random User Api](https://randomuser.me/api/?results=25&nat=us) used to generate the random users in here. 
 
 ## Contributors
 

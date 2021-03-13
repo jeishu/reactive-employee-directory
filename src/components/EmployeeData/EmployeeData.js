@@ -8,11 +8,11 @@ import Menu from "../Menu/Menu.js";
 import DataTable from "../DataTable/DataTable.js";
 
 const EmployeeData = () => {
-    // const [results, setResults] = useState([]);
-
     const [employeeState, setEmployeeState] = useState({
         list: [],
         filterList: [],
+        nameSort: false,
+        emailSort: false,
         profile: [
             {label: "Image"},
             {label: "Name"},
@@ -33,6 +33,7 @@ const EmployeeData = () => {
         })
     }, []);
 
+    // Handles the search bar filter
     const handleSearch = (event) => { 
         setEmployeeState({
             ...employeeState,
@@ -43,8 +44,43 @@ const EmployeeData = () => {
         })
     }
 
+    // Sorting First Name from A-Z and Z-A
+    const handleSortName = (event) => {
+        const sortingName = employeeState.filterList.sort((a,b) => {
+            if (!employeeState.nameSort) {
+                // Sorts an array by case insensative sorting
+                return a.name.first.localeCompare(b.name.first); 
+            } else {
+                return b.name.first.localeCompare(a.name.first); 
+            } 
+        })
+        setEmployeeState({
+            ...employeeState,
+            filterList: sortingName,
+            nameSort: !employeeState.nameSort
+        })
+        console.log(sortingName);
+    }
+
+    // Sorting Email from A-Z and Z-A
+    const handleSortEmail = () => {
+        const sortingEmail = employeeState.list.sort((a,b) => {
+            if (!employeeState.emailSort) {
+                return a.email.localeCompare(b.email);
+            } else {
+                return b.email.localeCompare(a.email); 
+            } 
+        })
+        setEmployeeState({
+            ...employeeState,
+            filterList: sortingEmail,
+            emailSort: !employeeState.emailSort
+        })
+        console.log("Click Email");
+    }
+
     return (
-        <EmployeeContext.Provider value={{employeeState, handleSearch}}>
+        <EmployeeContext.Provider value={{employeeState, handleSearch, handleSortName, handleSortEmail}}>
             <div>
                 <Navbar>
                     <Search/>

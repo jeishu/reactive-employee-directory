@@ -5,20 +5,35 @@ import "../DataTable/DataTable.scss";
 
 const DataTable = () => {
     const data = useContext(EmployeeContext);
-    console.log(data.profile);
+    // Should console the labels for the table into an array
+    // console.log(data.employeeState.profile);
+    // console.log(data.employeeState.list);
 
     return (
         <div className="tableContainer">
             <table>
-                <thead className="theadInfo">
-                    <tr className="labelInfo">
-                        {data.employeeState.profile.map(({label}) => {
-                            return (
-                                <th className="label">
-                                    {label}
-                                </th>
-                            )
-                        })}
+                <thead>
+                    <tr>
+                        <th className="label">
+                            Image
+                        </th>
+                        <th 
+                            className="label"
+                            style= {{cursor:'pointer'}}
+                            onClick={data.handleSortName}
+                        >
+                            Name
+                        </th >
+                        <th className="label">
+                            Phone
+                        </th>
+                        <th 
+                            className="label"
+                            style= {{cursor:'pointer'}}
+                            onClick={data.handleSortEmail}    
+                        >
+                            Email
+                        </th>
                     </tr>
                 </thead>
                 <DataBody/>
