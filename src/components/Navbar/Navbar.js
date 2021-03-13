@@ -6,7 +6,7 @@ const Navbar = ({children}) => {
     return (
         <div>
             <div className="navBar">
-                <h1>Reactive Employee Directory</h1>
+                <h1>Reactive User Directory</h1>
                 {children}
             </div>
         </div>
